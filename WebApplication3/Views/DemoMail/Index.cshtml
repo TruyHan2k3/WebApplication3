@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (@Html.BeginForm())
+{
+    @Html.Label("mails", "E-Mail:");
+    @Html.DropDownList("mails", "Select an Email")
+    <hr />
+    @Html.Label("mails", "E-Mail:");
+    @Html.ListBox("mails")
+}
+

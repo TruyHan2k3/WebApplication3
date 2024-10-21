@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Upload";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>Hinh Anh</div>
+<div>
+    <img src="~/Images/@ViewBag.imageFileName" style="width: 350px; height: 350px"/>
+    <ul>
+        <li> Image Name: @ViewBag.imageFileName</li>
+    </ul>
+</div>
+<div> Tai Lieu</div>
+<div>
+    <ul>
+        <li> File name: @ViewBag.DocFileName</li>
+        <li> File type: @ViewBag.DocFileType</li>
+        <li> File Size: @ViewBag.DocFileSize</li>
+        <li> <a href="~/Upload/@ViewBag.DocFileName"> Download</a></li>
+    </ul>
+</div>
